@@ -1,0 +1,3 @@
+# Disclaimer
+
+The Resistor Color Code Calculator provided on this website is strictly for educational purposes only. While we at shanecore_systems strive to ensure the accuracy and reliability of the information and calculations provided, we cannot guarantee that the results will be free from errors or inaccuracies. Users are advised to use the calculator at their own risk. We do not accept any responsibility or liability for any loss, damage, or inconvenience caused as a result of using the calculator or relying on its results. Users should verify the results independently and consult a professional if necessary. By using the Resistor Color Code Calculator, you acknowledge and agree to this disclaimer.

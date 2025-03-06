@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device=width, initial-scale=1.0">
+  <title>Resistor Color Code Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="branding">  -shanecore_systems™-</div>
+  <div class="calculator-container">
+    <div class="calculator">
+      <h5>RESISTOR COLOR CODE CALCULATOR</h5>
+      <div class="band-selector">
+        <label for="num-bands">Number of Bands:</label>
+        <select id="num-bands">
+          <option value="4">4-Band</option>
+          <option value="5">5-Band</option>
+          <option value="6">6-Band</option>
+        </select>
+      </div>
+      <div class="resistor-container">
+        <div class="resistor">
+          <div class="lead left"></div>
+          <div class="resistor-body">
+            <div class="band" id="band1"></div>
+            <div class="band" id="band2"></div>
+            <div class="band" id="band3"></div>
+            <div class="band" id="band4"></div>
+            <div class="band" id="band5" style="display: none;"></div>
+            <div class="band" id="band6" style="display: none;"></div>
+          </div>
+          <div class="lead right"></div>
+        </div>
+      </div>
+      <div class="controls">
+        <!-- Band dropdowns will be dynamically generated here -->
+      </div>
+      <div class="result">
+        <p>Resistance Value: <span id="resistance-value">0</span> Ω</p>
+        <p>Tolerance: ±<span id="tolerance-value">0</span>%</p>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="reverse-calculator">
+      <img src="https://assets.onecompiler.app/43af7ep2e/43az3rb2q/IMG-20250305-WA0031.jpg" alt="Logo" width="100" height="100"> <!-- Added logo image -->
+      <p style="font-size: small; font-style: italic;">shanecore_properties_pty.ltd</p> <!-- Added text below the logo -->
+      <h2>Reverse Calculator</h2>
+      <label for="resistor-value">Enter Resistor Value:</label>
+      <input type="number" id="resistor-value" placeholder="e.g., 1000">
+      <select id="resistor-unit">
+        <option value="Ω">Ω</option>
+        <option value="kΩ">kΩ</option>
+        <option value="MΩ">MΩ</option>
+      </select>
+      <button id="generate-colors">Generate Color Code</button>
+      <div class="resistor-container" id="reverse-resistor-container">
+        <div class="resistor">
+          <div class="lead left"></div>
+          <div class="resistor-body">
+            <div class="band" id="reverse-band1"></div>
+            <div class="band" id="reverse-band2"></div>
+            <div class="band" id="reverse-band3"></div>
+            <div class="band" id="reverse-band4"></div>
+            <div class="band" id="reverse-band5" style="display: none;"></div>
+            <div class="band" id="reverse-band6" style="display: none;"></div>
+          </div>
+          <div class="lead right"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-image: url('https://assets.onecompiler.app/43af7ep2e/43az3rb2q/IMG-20250305-WA0031.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  z-index: -1;
+}
+
+.branding {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2em; /* Reduced font size */
+  font-weight: 700;
+  color: #333; /* Changed text color to dark grey */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px; /* Adjust max-width to fit screen */
+  width: 90%; /* Adjust width to fit screen */
+}
+
+.calculator {
+  flex: 1;
+  padding-right: 20px; /* Add spacing between calculator and separator */
+}
+
+.separator {
+  width: 1px;
+  background: #ccc;
+  height: 100%;
+  margin: 0 20px; /* Add spacing around the separator */
+}
+
+.reverse-calculator {
+  flex: 1;
+  padding-left: 20px; /* Add spacing between separator and reverse calculator */
+}
+
+.band-selector {
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+.resistor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0; /* Reduced margin */
+}
+
+.resistor {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.resistor-body {
+  display: flex;
+  align-items: center;
+  background: #f0e0c5; /* Ceramic-like color */
+  padding: 8px; /* Reduced padding */
+  border-radius: 8px;
+  border: 2px solid #d0b090; /* Slightly darker border */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.lead {
+  width: 40px; /* Reduced length of the lead */
+  height: 6px; /* Reduced thickness of the lead */
+  background: #c0c0c0; /* Metallic silver color */
+  position: relative;
+  border-radius: 2px; /* Slightly rounded edges */
+}
+
+.lead.left {
+  margin-right: -15px; /* Adjusted overlap */
+}
+
+.lead.right {
+  margin-left: -15px; /* Adjusted overlap */
+}
+
+.band {
+  width: 15px; /* Reduced width */
+  height: 50px; /* Reduced height */
+  margin: 0 4px; /* Reduced margin */
+  border: 1px solid #000;
+  position: relative;
+  border-radius: 3px; /* Slightly rounded edges */
+}
+
+.band::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid #333;
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.controls {
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+label {
+  display: block;
+  margin: 8px 0 4px; /* Reduced margin */
+  font-size: 0.9em; /* Reduced font size */
+}
+
+select {
+  padding: 4px; /* Reduced padding */
+  width: 100%;
+  margin-bottom: 8px; /* Reduced margin */
+  font-size: 0.9em; /* Reduced font size */
+}
+
+.result {
+  font-size: 1em; /* Reduced font size */
+}
+
+.reverse-calculator h2 {
+  font-size: 1em; /* Reduced font size */
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.reverse-calculator label {
+  display: block;
+  margin: 8px 0 4px; /* Reduced margin */
+  font-size: 0.9em; /* Reduced font size */
+}
+
+.reverse-calculator input,
+.reverse-calculator select {
+  padding: 4px; /* Reduced padding */
+  margin: 4px; /* Reduced margin */
+  font-size: 0.9em; /* Reduced font size */
+}
+
+.reverse-calculator button {
+  padding: 8px 16px; /* Reduced padding */
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em; /* Reduced font size */
+}
+
+.reverse-calculator button:hover {
+  background: #555;
+}
